@@ -1,2 +1,6 @@
 # Godot-Dungeon-Example
-Test repo for my first project in 4.2 version of Godot. For testing purposes
+
+Репозиторий с тестом новых фичей и возможностей Godot 4.2
+
+Использованные ресурсы: 
+- [Dungeon Gathering - Under The Castle](https://snowhex.itch.io/dungeon-gathering)
