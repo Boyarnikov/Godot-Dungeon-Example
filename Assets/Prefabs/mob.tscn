@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://b0vmrx0su3f4m"]
 
-[ext_resource type="Script" path="res://Mob.gd" id="1_r4nim"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Mob.gd" id="1_r4nim"]
 [ext_resource type="Texture2D" uid="uid://cj423bfxwkfv4" path="res://Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Red/TNT_Red.png" id="2_oycc5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pql36"]

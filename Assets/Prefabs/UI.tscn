@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3aikimhu6sui"]
 
-[ext_resource type="Script" path="res://UI.gd" id="1_stg85"]
-[ext_resource type="FontFile" uid="uid://cmxyqiefk68bg" path="res://Test-Regular.ttf" id="2_887km"]
+[ext_resource type="Script" path="res://Assets/Prefabs/UI.gd" id="1_stg85"]
+[ext_resource type="FontFile" uid="uid://cmxyqiefk68bg" path="res://Assets/Test-Regular.ttf" id="2_887km"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_stg85")

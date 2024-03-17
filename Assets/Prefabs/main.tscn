@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://nxk3s6wokwwd"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_l1d0o"]
-[ext_resource type="PackedScene" uid="uid://b0vmrx0su3f4m" path="res://mob.tscn" id="2_i2yrk"]
-[ext_resource type="PackedScene" uid="uid://dhcpb42fq60rh" path="res://player.tscn" id="2_mif0b"]
-[ext_resource type="PackedScene" uid="uid://c3aikimhu6sui" path="res://UI.tscn" id="4_dm4nv"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Main.gd" id="1_l1d0o"]
+[ext_resource type="PackedScene" uid="uid://b0vmrx0su3f4m" path="res://Assets/Prefabs/mob.tscn" id="2_i2yrk"]
+[ext_resource type="PackedScene" uid="uid://dhcpb42fq60rh" path="res://Assets/Prefabs/player.tscn" id="2_mif0b"]
+[ext_resource type="PackedScene" uid="uid://c3aikimhu6sui" path="res://Assets/Prefabs/UI.tscn" id="4_dm4nv"]
 
 [sub_resource type="Curve2D" id="Curve2D_kc15y"]
 _data = {
