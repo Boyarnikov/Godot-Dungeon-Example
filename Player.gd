@@ -8,6 +8,7 @@ var screen_size
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	set_y_sort_enabled(true)
 	screen_size = get_viewport_rect().size
 	hide()
 	start(Vector2.ONE)
@@ -49,7 +50,7 @@ func _process(delta):
 		
 
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	hide()
 	hit.emit()
 	$CollisionShape2D.set_deferred("disabled", true)
