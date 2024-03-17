@@ -101,14 +101,13 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wohgl"]
-radius = 24.0
-height = 66.0
+radius = 20.0
+height = 42.0
 
 [node name="Mob" type="RigidBody2D"]
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_r4nim")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -118,7 +117,9 @@ frame = 5
 frame_progress = 0.93596
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
 shape = SubResource("CapsuleShape2D_wohgl")
+metadata/_edit_group_ = true
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 

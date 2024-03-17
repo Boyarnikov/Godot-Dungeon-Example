@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://4xd1vhdy3xht" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png" id="2_f07on"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8i0j"]
-radius = 29.0
-height = 80.0
+radius = 17.0
+height = 42.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rsrf8"]
 atlas = ExtResource("2_f07on")

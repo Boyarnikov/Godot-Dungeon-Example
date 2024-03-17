@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://nxk3s6wokwwd"]
+[gd_scene load_steps=6 format=3 uid="uid://nxk3s6wokwwd"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_l1d0o"]
 [ext_resource type="PackedScene" uid="uid://b0vmrx0su3f4m" path="res://mob.tscn" id="2_i2yrk"]
 [ext_resource type="PackedScene" uid="uid://dhcpb42fq60rh" path="res://player.tscn" id="2_mif0b"]
+[ext_resource type="PackedScene" uid="uid://c3aikimhu6sui" path="res://UI.tscn" id="4_dm4nv"]
 
 [sub_resource type="Curve2D" id="Curve2D_kc15y"]
 _data = {
@@ -28,7 +29,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="StartPosition" type="Marker2D" parent="CanvasLayer"]
-position = Vector2(240, 240)
+position = Vector2(576, 320)
 gizmo_extents = 37.0
 
 [node name="MobPath" type="Path2D" parent="CanvasLayer"]
@@ -38,7 +39,10 @@ curve = SubResource("Curve2D_kc15y")
 position = Vector2(0, 640)
 rotation = -1.5708
 
-[connection signal="hit" from="CanvasLayer/Player" to="." method="game_over"]
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("4_dm4nv")]
+
+[connection signal="hit" from="CanvasLayer/Player" to="CanvasLayer" method="game_over"]
 [connection signal="timeout" from="CanvasLayer/MobTimer" to="CanvasLayer" method="_on_mob_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/ScoreTimer" to="CanvasLayer" method="_on_score_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/StartTimer" to="CanvasLayer" method="_on_start_timer_timeout"]
+[connection signal="start_game" from="CanvasLayer/HUD" to="CanvasLayer" method="_on_hud_start_game"]

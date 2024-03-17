@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3aikimhu6sui"]
+
+[ext_resource type="Script" path="res://UI.gd" id="1_stg85"]
+[ext_resource type="FontFile" uid="uid://cmxyqiefk68bg" path="res://Test-Regular.ttf" id="2_887km"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_stg85")
+
+[node name="ScoreLabel" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -184.0
+offset_top = 48.0
+offset_right = 182.0
+offset_bottom = 161.0
+grow_horizontal = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_887km")
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+
+[node name="Message" type="Label" parent="."]
+texture_filter = 1
+clip_contents = true
+custom_minimum_size = Vector2(100, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.5
+offset_top = -75.0
+offset_right = 203.5
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_887km")
+theme_override_font_sizes/font_size = 160
+text = "Dodge them!"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -168.0
+offset_top = -160.0
+offset_right = 168.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_887km")
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]

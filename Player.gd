@@ -11,7 +11,6 @@ func _ready():
 	set_y_sort_enabled(true)
 	screen_size = get_viewport_rect().size
 	hide()
-	start(Vector2.ONE)
 	
 	
 func start(pos):
